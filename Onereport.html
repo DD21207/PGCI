@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="img/ico_logo.ico" rel="shortcut icon" type="image/x-icon"/>
+    <title>One Report</title>
+    <link rel="stylesheet" href="css/one.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/one.js"></script>
+</head>
+
+<body>
+<div id="top_banner">
+        <img src="img/starcom_logo.png" alt="Starcompass">
+        <p class="tite">ONE REPORT</p>
+        <div id="account">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="a">
+                        Hi
+                        <label id="admin">MapleYe
+                        </label>
+                        <b class="caret">
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu" id="admin-ul" style="margin: -5px;margin-left:-15px;">
+                        <li>
+                            <a href="#" onclick="javascript:alert('This function is being constructed, temporarily not open, please be patient.')">
+                                <i class="fa fa-fw fa-user">
+                                </i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#myPsw">
+                                <i class="fa fa-fw fa-gear">
+                                </i>
+                                Password
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li>
+                            <a id="btnLogout" href="#">
+                                <i class="fa fa-fw fa-power-off">
+                                </i>
+                                Log Out
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+
+
+</div>
+<nav id="nav">
+    <ul class="nav navbar-nav">
+                    <li class="dropdown" style="float: left;padding:0;margin-left: 30px;">
+                        <a class="a1" href="index.html" style="color:#303030;padding: 10px;">
+                            <i class="fa fa-fw fa-home" style="font-size: 30px">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="dropdown" style="float: left;min-width:150px; padding-right:20px;margin-left:40px;"
+                    id="li1">
+                        <a href="javascript:void(0);"  style="padding: 0;"
+                        class="a" id="M">
+                            <div style="float: left;font-size: 16px;margin-left: 12px;padding-top: 8px;">
+                                <img src="img/one/Market.png" height="35px" style="float: left;">
+                                <div style="float: left;line-height: 1.1;margin-left: 12px;">Market <br>Intelligence</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" id="ullM">
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(1,$(this));">
+                                    Corporate Topline
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(2,$(this));">
+                                    One Report_by Brand
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(3,$(this));">
+                                    Business Market Performance
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" style="float: left;min-width:150px; margin-left:5px ;padding-right:20px;"
+                    id="li2">
+                        <a href="javascript:void(0);" style="padding: 0;" class="a dropdown-toggle"
+                        data-toggle="dropdown" id="D">
+                            <div style="float: left;font-size: 16px;margin-left: 12px;padding-top: 8px;">
+                                <img src="img/one/Brand.png" height="35px" style="float: left;">
+                                <div style="float: left;line-height: 1.1;margin-left: 12px;">Brand <br>Analytics</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" id="ullD">
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(4,$(this));">
+                                    Category Landscape
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" id="Score">
+                                    Brand Scorecard
+                                </a>
+                                <ul class="dropdown-menu" id="ullScore" style="margin-top: -127px;margin-left: 175px;">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(5,$(this));">
+                                                Haircare Monthly ScoreCard
+                                            </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(6,$(this));">
+                                            Babycare Monthly ScoreCard
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(7,$(this));">
+                                            Laundry
+                                            Monthly ScoreCard
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(8,$(this));">
+                                            Crest
+                                            Monthly ScoreCard
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" id="Competitive" class="dropdown-toggle" data-toggle="dropdown">
+                                    Competitive Analytics
+                                </a>
+                                <ul class="dropdown-menu" id="ullCompetitive" style="margin-top: -82px;margin-left: 175px;">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(9,$(this));">
+                                                Competitive Performance
+                                            </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(10,$(this));">
+                                            Media Portfolio
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" id="Intelligence" class="dropdown-toggle" data-toggle="dropdown">
+                                   Intelligence
+                                </a>
+                                <ul class="dropdown-menu" id="ullIntelligence" style="margin-top: -42px;margin-left: 175px;">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(11,$(this));">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(12,$(this));">
+                                            Sharing Studies
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" style="float: left;min-width:150px; margin-left:5px ;padding-right:20px;"
+                    id="li3">
+                        <a href="javascript:void(0);" style="padding: 0;" class="a dropdown-toggle"
+                        data-toggle="dropdown" id="E">
+                           <div style="float: left;font-size: 16px;margin-left: 12px;padding-top: 8px;">
+                                <img src="img/one/ISP.png" height="35px" style="float: left;">
+                                <div style="float: left;line-height: 1.1;margin-left: 12px;">ISP <br>Performance</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" id="ullE">
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(13,$(this));">
+                                    TV Delivery
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(14,$(this));">
+                                    OTT Delivery
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" id="Delivery" class="dropdown-toggle" data-toggle="dropdown">
+                                    Digital Delivery
+                                </a>
+                                <ul class="dropdown-menu" id="ullDelivery" style="margin-top: -42px;margin-left: 159px;">
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(15,$(this));">
+                                            Daily Tracking
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(16,$(this));">
+                                            Monthly Tracking
+
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="setData(17,$(this));">
+                                            Digital Post buy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown" style="float: left;min-width:150px; margin-left:5px ;padding-right:20px;"
+                    id="li5">
+                        <a href="javascript:void(0);" style="padding: 0;" class="a dropdown-toggle"
+                        data-toggle="dropdown" id="F">
+                            <div style="float: left;font-size: 16px;margin-left: 12px;padding-top: 8px;">
+                                <img src="img/one/Media.png" height="35px" style="float: left;">
+                                <div style="float: left;line-height: 1.1;margin-left: 12px;">Media <br>Detail</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" id="ullF">
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(18,$(this));">
+                                    TV GRP/SOV
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(19,$(this));">
+                                    Media Reach
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="setData(20,$(this));">
+                                    Media Monitor Spending
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" style="float: left;min-width:150px; margin-left:5px ;padding-right:20px;"
+                    id="li4">
+                        <a href="javascript:void(0);" style="padding: 0;" class="a dropdown-toggle"
+                        data-toggle="dropdown" onclick="setData(21,$(this));">
+                            
+                            <div style="float: left;font-size: 16px;margin-left: 12px;padding-top: 8px;">
+                                <img src="img/one/Consumer.png" height="35px" style="float: left;">
+                                <div style="float: left;line-height: 1.1;margin-left: 12px;">Consumer <br>Academy</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+</nav>
+<div id="container" >
+    <iframe id="centerFrame" src="" style="width: 100%; height: 100%;" frameborder="no" border="0"></iframe>
+</div>
+<div id="bottom_banner">
+        <p>Copyright 2016-2017 STARCOM. All rights reserved.</p>
+</div>
+
+</body>
+
+</html>

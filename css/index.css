@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+#top_banner{
+	width: 100%;
+	height: 70px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background: url(../img/LandingPagebanner1.jpg) top left no-repeat;
+
+}
+#top_banner img{
+	height: 60px;
+	padding-top: 5px;
+	padding-left:25px;
+}
+
+#bottom_banner{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: url(../img/LandingPagebanner2.jpg) bottom left no-repeat;
+}
+#bottom_banner p{
+	position: fixed;
+	bottom:5px;
+	right: 10px;
+	font-size: 16px;
+	color: rgb(0,112,192);
+	font-weight: 600;k,
+} 
+#container{
+	width: 100%;
+	position: relative;
+}
+
+#content{
+	height: 100%;
+	width: 90%;
+	margin: 30px auto;
+	position: relative;
+
+}
+
+.box1{
+	float: left;
+	width: 19%;
+	margin-left:1%;
+	height: 44%;
+	margin-top: 20px;
+	position: relative;
+}
+.box1>img{
+	width: 100%;
+
+}
+.box{
+	float: left;
+	width: 19%;
+	margin-left:1%;
+	height: 44%;
+	margin-top: 20px;
+	position: relative;
+}
+
+.box>img{
+	width: 100%;
+
+}
